@@ -25,7 +25,8 @@
 <body>
     <nav class="navbar">
         <div class="left">
-            <h1>Grupo Revilla</h1>
+            
+            <h1><img src="./img/logo_gr.png"  class="logo_navbar" alt="logo grupo revilla">upo Revilla</h1>
         </div>
         <div class="right">
             <input type="checkbox" id="check">
@@ -48,43 +49,54 @@
             </ul>
         </div>
     </nav>
-    <div class="card-main-container">
+    <section class="card-main-container">
         <div class="card-main">
             <div class="front-card">
-                <img src="./user.png" alt="">
-                <h2>Raju</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore repellat quis.</p>
+                <img src="./img/logo_global.png" alt="logo Global Cargo Ecuador">
+                <h2>Global Cargo Ecuador</h2>
+                <p>Servicios integrados de <spa class="seo">importación</spa> y <span class="seo">exportación</span></p>
             </div>
             <div class="back-card">
-                <h2 class="back-light">Thank You!</h2>
-                <p class="back-light"> Social Media Management </p>
-                <p class="btn"><a class="back-light" href="#">Know More</a></p>
+                <h2 class="back-light"><span class="callAction">servicios</span></h2>
+                <p class="back-light"> Tramites de <span class="seo">aduana</span> asesoramiento <span class="seo">gratuito</span>  </p>
+                <p class="btn"><a class="back-light" href="#">INGRESAR</a></p>
             </div>
         </div>
         <div class="card-main">
             <div class="front-card">
-                <img src="./user.png" alt="">
-                <h2>Raju</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore repellat quis.</p>
+                <img src="./img/logo_gcbox.png" alt="Logo Gc-Box Courier">
+                <h2>GC-Box</h2>
+                <p>Compra en tiendas como <span class="seo">amazon</span> <span class="seo">Ebay</span> <span class="seo">Aliexpress</span> y lo tienes en tus manos</p>
             </div>
             <div class="back-card">
-                <h2 class="back-light">Thank You!</h2>
-                <p class="back-light"> Social Media Management </p>
-                <p class="btn"><a class="back-light" href="#">Know More</a></p>
+                <h2 class="back-light"><span class="callAction">servicios</span></h2>
+                <p class="back-light"> Compras seguras y costo fijo</p>
+                <p class="btn"><a class="back-light" href="#">INGRESAR</a></p>
             </div>
         </div>
         <div class="card-main">
             <div class="front-card">
-                <img src="./user.png" alt="">
-                <h2>Raju</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore repellat quis.</p>
+                <img src="./img/logo_global.png" alt="Logo Gc-Trade">
+                <h2>Gc-Trade</h2>
+                <p>Representaciones y alianzas internacionales</p>
             </div>
             <div class="back-card">
-                <h2 class="back-light">Thank You!</h2>
-                <p class="back-light"> Social Media Management </p>
-                <p class="btn"><a class="back-light" href="#">Know More</a></p>
+                <h2 class="back-light"><span class="callAction">servicios</span></h2>
+                <p class="back-light"> Exporta o importa servicios</p>
+                <p class="btn"><a class="back-light" href="#">INGRESAR</a></p>
             </div>
         </div>
-    </div>
+    </section>
+    <footer class="footer">
+        <div>
+            <p class="derechos">Todos los derechos reservados GRUPO REVILLA</p>
+        </div>
+        <div>
+            <p class="derechos">MashaWeb Corp 
+                <span class="dis">designed by</span>
+                <span class="autor">Pablo Revilla</span>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
