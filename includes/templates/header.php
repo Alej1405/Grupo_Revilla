@@ -23,7 +23,33 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- integracion con funciones de javascript -->
+        <script src="../../js/funciones.js"></script>
     <!-- identificacion de la pagina web -->
         <title>Sistema</title>
 </head>
 <body>
+<header>
+    <!-- menu de activacion del nav bar  -->
+        <div id="menu" onclick="enable()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    <!-- menu de navegacion -->
+        <nav class="navs" id="navs">
+            <li>
+                <a href="#">Registrar</a>
+            </li>
+            <li>
+                <a href="#">Global Cargo</a>
+            </li>
+            <li>
+                <a href="#">Gc-Box</a>
+            </li>
+            <li>
+                <a href="#">Gc-Trade</a>
+            </li>
+        </nav>
+</header>

@@ -120,7 +120,114 @@ html, body{
     width: 50px;
 }
 /* fin de estilos de nacbar */
+/* estilos del nav bar para el sistema */
+header {
+    top: 0;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
 
+.navs {
+    position: fixed;
+    right: 0;
+    width: 16vw;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #9b87fe;
+    z-index: 100;
+    align-items: stretch;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: all 0.2s;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    opacity: 0.9;
+    padding-left: 3%;
+}
+
+.navs-open {
+    transform: translateX(0);
+}
+
+.navs a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navs li {
+    list-style: none;
+    font-size: 1.39vw;
+    padding: 0;
+    color: white;
+}
+
+.navs li:nth-child(1){
+    margin-top: 20vh;
+}
+
+#menu {
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    margin-right: 0;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out; 
+    cursor: pointer;
+    right: 7vw;
+    z-index: 1000;
+    top: 9.5vh;
+}
+
+#menu span {
+    display: block;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background: #ffb870;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+#menu span:nth-child(1) {
+    top: 0;
+}
+
+#menu span:nth-child(2), 
+#menu span:nth-child(3) {
+    top: 10px;
+}
+
+#menu span:nth-child(4) {
+    top: 20px;
+}
+
+#menu.open span:nth-child(1) {
+    top: 0px;
+    width: 0%;
+    left: 0%;
+}
+
+#menu.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+#menu.open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+#menu.open span:nth-child(4) {
+    top: 0px;
+    width: 0%;
+    left: 0%;
+}
+/* fin de estilo del nav bar para el sistema */
 /* inicio de estilos de tarjetas */
 .card-main-container {
     width: 100%;
