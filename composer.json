@@ -1,0 +1,17 @@
+{
+    "name": "grupo-revilla/sistema",
+    "description": "Sistema general de funciones de la empresas del grupo revilla",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Pablo Revilla",
+            "email": "lineas1405@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "class/"
+        }
+    }
+}
