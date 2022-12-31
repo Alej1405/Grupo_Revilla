@@ -16,7 +16,7 @@ html, body{
 
 /*estilos background*/
 
-body {
+.principal {
     background-image: url(../img/fondo_gr.svg);
     background-size: cover;
     background-repeat: no-repeat;

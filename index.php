@@ -23,7 +23,7 @@
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Grupo Revilla</title>
 </head>
-<body>
+<body class="principal"> 
     <nav class="navbar">
         <div class="left">
             
@@ -88,9 +88,6 @@
             </div>
         </div>
     </section>
-    <script>
-        swal("Hello world!");
-    </script>
     <footer class="footer">
         <div>
             <p class="derechos">Todos los derechos reservados GRUPO REVILLA</p>
