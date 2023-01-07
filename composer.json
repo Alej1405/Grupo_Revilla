@@ -1,11 +1,12 @@
 {
-    "name": "grupo-revilla/sistema",
-    "description": "Sistema general de funciones de la empresas del grupo revilla",
+    "name": "alejandrorevilla/grupo_revilla",
+    "description": "Proyectos integradi de sistema de control",
     "type": "project",
+    "license": "MashaWebCorp",
     "authors": [
         {
-            "name": "Pablo Revilla",
-            "email": "lineas1405@gmail.com"
+            "name": "Alej1405",
+            "email": "103963976+Alej1405@users.noreply.github.com"
         }
     ],
     "require": {},
