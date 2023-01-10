@@ -17,7 +17,7 @@
         <meta property="og:site_name" content="Grupo revilla">
     <!-- links de estilos y fuentes -->
         <link rel="shortcut icon" href="img/logo_gr.png">
-        <link rel="stylesheet" href="../../styles/styles.css">
+        <link rel="stylesheet" href="../../styles/styles_form.css">
     <!-- integracion de bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
@@ -30,28 +30,3 @@
     <!-- identificacion de la pagina web -->
         <title>Sistema</title>
 </head>
-<body>
-<header>
-    <!-- menu de activacion del nav bar  -->
-        <div id="menu" onclick="enable()">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    <!-- menu de navegacion -->
-        <nav class="navs" id="navs">
-            <li>
-                <a href="#">Registrar</a>
-            </li>
-            <li>
-                <a href="#">Global Cargo</a>
-            </li>
-            <li>
-                <a href="#">Gc-Box</a>
-            </li>
-            <li>
-                <a href="#">Gc-Trade</a>
-            </li>
-        </nav>
-</header>
