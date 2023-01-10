@@ -12,7 +12,7 @@ incluirTemplate('header_sis');
             placeholder="Usuario">
             <input type="password"
             placeholder="Clave">
-            <a href="">
+            <a href="registro.php">
                 Registrar nuevo usuario.
             </a>
             <button type="submit">
