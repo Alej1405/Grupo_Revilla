@@ -45,7 +45,6 @@ class Registro {
     //funcion guardar
     public function guardar()
     {
-
         //sanitizar los datos
         $datos = $this -> sanitizarDatos();
 
