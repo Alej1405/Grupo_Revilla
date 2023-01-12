@@ -9,7 +9,8 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST') {
     //INSTANCIAR LA CLASE
     $registro = new Registro($_POST);
 
-    debuguear($registro);
+    //pasar los datos del formulario a la clase
+    $registro -> guardar(); 
 }
 
 
@@ -22,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST') {
             <input 
                 type="number"
                 placeholder="Número de Cédula"
-                name="numeroCedula"
+                name="cedula"
             />
             <input 
                 type="text"
