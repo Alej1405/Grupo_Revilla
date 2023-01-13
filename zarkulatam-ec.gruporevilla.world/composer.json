@@ -1,0 +1,12 @@
+{
+    "name": "macbook/zarkulatam-ec.gruporevilla.world",
+    "type": "project",
+    "license": "mashawebcorp",
+    "authors": [
+        {
+            "name": "Alej1405",
+            "email": "103963976+Alej1405@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
