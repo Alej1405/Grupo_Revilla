@@ -51,14 +51,15 @@ class Registro {
         //query para insertar
         $query = "INSERT INTO usuarios ( ";
         $query .= join(', ', array_keys($datos));
-        $query .= " ) VALUES (' ";
+        $query .= " ) VALUES ('";
         $query .= join("', '", array_values($datos));
-        $query .= " ') ";
+        $query .= "') ";
         
-        
+        //debuguear($query);
+
         $resultado = self::$db -> query($query);
         
-        debuguear($resultado);
+        //debuguear($resultado);
     }
 
     //unir las comunsas de la base de datos o identificar 
