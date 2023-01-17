@@ -69,5 +69,6 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST') {
                 INGRESAR
             </button>
         </form>
+        <a href="../index.php" class="escape">SALIR</a>
     </div>
 </body>

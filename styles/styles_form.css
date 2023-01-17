@@ -91,3 +91,8 @@ body{
     color: #f9f9f9;
     font-weight: 600;
 }
+
+.escape {
+    font-size: .2rem;
+    right: 0;
+}
