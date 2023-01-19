@@ -719,5 +719,6 @@ incluirTemplate('header_gcSys');
 </div>
 
 <?php
-    incluirTemplate('footer_sys')
+    incluirTemplate('footer');
+    incluirTemplate('scripts')
 ?>
