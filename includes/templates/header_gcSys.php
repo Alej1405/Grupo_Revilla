@@ -27,7 +27,7 @@
         rel="stylesheet">
 
 <!-- Custom styles for this template-->
-    <link href="../../styles/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../../styles/sb-admin-2.css" rel="stylesheet">
 
 <!-- links de estilos y fuentes -->
     <link rel="shortcut icon" href="../../img/logo_gcbox.png">
@@ -38,3 +38,8 @@
 
 
 </head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
