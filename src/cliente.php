@@ -7,6 +7,9 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
 
     //instanciar clase
     $cliente = new Cliente($_POST);
+
+    //llamar a la funcion guardar
+    $cliente -> guardar();
 }
 ?>
 

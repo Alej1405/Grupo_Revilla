@@ -8,3 +8,8 @@ use App\Registro;
 //conectar a la base de datos
 $db = conectarDB();
 Registro::setDB($db);
+
+use App\Cliente;
+//conectar a la base de datos
+$db = conectarDB();
+Cliente::setDB($db);
