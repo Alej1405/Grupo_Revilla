@@ -1,7 +1,13 @@
 <?php
 require '../includes/app.php';
-
 incluirTemplate('header_gcSys');
+use App\Cliente;
+
+if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
+
+    //instanciar clase
+    $cliente = new Cliente($_POST);
+}
 ?>
 
 <body class="bg-gradient-primary">
@@ -20,61 +26,134 @@ incluirTemplate('header_gcSys');
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Crea tu cuenta!</h1>
+                                <h1 class="h4 text-gray-900 mb-4">
+                                    <img class="logo2" src="../img/logo_gcbox.png" alt="">
+                                    Crea tu cuenta!
+                                </h1>
                             </div>
-                            <form class="user">
+                            <form class="user" method="POST" action="">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="nombre"
-                                            placeholder="Nombre o nombres">
+                                        <input 
+                                            type="text" 
+                                            class="form-control form-control-user" 
+                                            id="nombre"
+                                            placeholder="Nombre o nombres"
+                                            name="nombre"
+                                            maxlength="150"
+                                            require>
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                            placeholder="Apellido o apellidos">
+                                        <input 
+                                            type="text" 
+                                            class="form-control form-control-user" 
+                                            id="apellido"
+                                            placeholder="Apellido o apellidos"
+                                            name="apellido"
+                                            maxlength="150"
+                                            require>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="int" class="form-control form-control-user" id="exampleFirstName"
-                                            placeholder="Número de cédula">
+                                        <input 
+                                            type="int" 
+                                            class="form-control form-control-user" 
+                                            id="cedula"
+                                            placeholder="Número de cédula"
+                                            name="cedula"
+                                            maxlength="10"
+                                            require>
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                            placeholder="En qué provincia vives..?">
+                                        <input 
+                                            type="text" 
+                                            class="form-control form-control-user" 
+                                            id="provincia"
+                                            placeholder="En qué provincia vives..?"
+                                            name="provincia"
+                                            maxlength="150">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                            placeholder="Cual es tu ciudad...?">
+                                        <input 
+                                            type="text" 
+                                            class="form-control form-control-user" 
+                                            id="ciudad"
+                                            placeholder="Cual es tu ciudad...?"
+                                            name="ciudad"
+                                            maxlength="150">
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                            placeholder="Mas o menos por que sector...?">
+                                        <input 
+                                            type="text" 
+                                            class="form-control form-control-user" 
+                                            id="referencia"
+                                            placeholder="Mas o menos por que sector...?"
+                                            name="referencia"
+                                            maxlength="250">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="En que direccion entregamos tus cosas...?">
+                                    <input 
+                                        type="text" 
+                                        class="form-control form-control-user" 
+                                        id="direccion"
+                                        placeholder="En que direccion entregamos tus cosas...?"
+                                        name="direccion"
+                                        maxlength="250">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Déjanos tu correo..">
+                                    <input 
+                                        type="email" 
+                                        class="form-control form-control-user" 
+                                        id="correo"
+                                        placeholder="Déjanos tu correo.."
+                                        name="correo"
+                                        maxlength="250"
+                                        require>
                                 </div>
                                 
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="int" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="Nos dejas tu numero de celular...?">
+                                        <input 
+                                            type="int" 
+                                            class="form-control form-control-user"
+                                            id="celular" 
+                                            placeholder="Nos dejas tu numero de celular...?"
+                                            name="celular"
+                                            maxlength="10"
+                                            require>
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="int" class="form-control form-control-user"
-                                            id="exampleRepeatPassword" placeholder="Tabién un telefono fijo...">
+                                        <input 
+                                            type="int" 
+                                            class="form-control form-control-user"
+                                            id="telefono" 
+                                            placeholder="Tabién un telefono fijo..."
+                                            name="telefono"
+                                            maxlength="10">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Tienes algún codigo de promoción...?">
+                                    <input 
+                                        type="text" 
+                                        class="form-control form-control-user" 
+                                        id="promocion"
+                                        placeholder="Tienes algún codigo de promoción...?"
+                                        name="promocion"
+                                        maxlength="10">
+                                </div>
+                                <div class="form-group">
+                                    <input 
+                                        type="password" 
+                                        class="form-control form-control-user" 
+                                        id="pasword"
+                                        placeholder="Crea una contraseña segura. Solo numeros"
+                                        name="pasword"
+                                        maxlength="8"
+                                        require>
                                 </div>
                                 <button class="btn btn-primary btn-user btn-block">
                                     Register Account
@@ -94,6 +173,9 @@ incluirTemplate('header_gcSys');
             </div>
         </div>
 
+        <p class="p_final">
+            En Gc-box tratamos de reducir al máximo el uso del papel, en nuestra plataforma podrás encontrar toda la documentación que necesitas. También queremos reducir la huella de carbono, si quieres ser parte de esto pregunta por nuestra entrega ecológica. 
+        </p>
     </div>
 
 <?php
