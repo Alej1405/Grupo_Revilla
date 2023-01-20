@@ -3,13 +3,24 @@ require '../includes/app.php';
 incluirTemplate('header_gcSys');
 use App\Cliente;
 
+$errores = Cliente::getErrores();
+//debuguear($errores);
+
 if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
 
     //instanciar clase
     $cliente = new Cliente($_POST);
 
-    //llamar a la funcion guardar
-    $cliente -> guardar();
+    //validar
+    $errores = $cliente -> validar();
+
+    if(empty($errores)){
+        //llamar a la funcion guardar
+        $cliente -> guardar();
+    }
+
+
+    
 }
 ?>
 
@@ -35,6 +46,11 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
                                 </h1>
                             </div>
                             <form class="user" method="POST" action="">
+                                <?php foreach($errores as $error): ?>
+                                    <div class="alert alert-danger" role="alert">
+                                        <?php echo $error; ?>
+                                    </div> 
+                                <?php endforeach;?>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input 

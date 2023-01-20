@@ -20,3 +20,14 @@ function debuguear ($variable) {
     echo "</pre>";
     exit;
 }
+
+function registroGuardado(){
+    echo "<script>
+        Swal.fire({
+            title: 'Registro Guardado',
+            text: 'Tu cuenta se creo correctamente, porfavor revisa tu correo ahí encontratras la dirección de tu casilla',
+            icon: 'success',
+            confirmButtonText: 'Continuar'
+        })
+    </script>";
+}

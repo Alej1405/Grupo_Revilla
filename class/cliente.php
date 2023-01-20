@@ -10,6 +10,10 @@ class Cliente{
     //iterar las columnas de la base de datos
         protected static $columnasDB = ['id', 'nombre', 'apellido', 'cedula', 'direccion', 'provincia', 'ciudad', 'referencia', 'celular', 'telefono', 'correo', 'pasword', 'promocion'];
 
+    //validacion
+
+        protected static $errores = [];
+
     // declarar los atributos de la clase
         public $id;
         public $nombre;
@@ -69,7 +73,10 @@ class Cliente{
 
         $resultado = self::$db -> query($query);
 
-        debuguear($resultado);
+        if($resultado){
+            // mensaje de exito
+            registroGuardado();
+        }
 
         }
 
@@ -96,4 +103,32 @@ class Cliente{
             }
             return $sanitizado;
         }
+
+    //validar datos
+    public static function getErrores()
+    {
+        return self::$errores;
+    }
+
+    public function validar(){
+        if(!$this->nombre){
+            self::$errores[] = "El nombre es obligatorio";
+        }
+        if(!$this->apellido){
+            self::$errores[] = "El apellido es obligatorio";
+        }
+        if(!$this->cedula){
+            self::$errores[] = "El número de cedula es obligatorio";
+        }
+        if(!$this->correo){
+            self::$errores[] = "El correo es obligatorio";
+        }
+        if(!$this->celular){
+            self::$errores[] = "El número de celular es obligatorio";
+        }
+        if(!$this->pasword){
+            self::$errores[] = "Es necesario crear una contraseña";
+        }
+        return self::$errores;
+    }
 }
