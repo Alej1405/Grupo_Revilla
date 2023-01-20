@@ -35,6 +35,8 @@
 <!-- sweet alert -->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+<script src="https://kit.fontawesome.com/36e9f60aba.js" crossorigin="anonymous"></script>
+
 
 
 </head>

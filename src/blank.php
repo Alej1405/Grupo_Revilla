@@ -6,7 +6,10 @@ incluirTemplate('sidebar');
 incluirTemplate('navBar');
 ?>
 
+<!-- Begin Page Content -->
+<div class="container-fluid">
 
+</div>
 <?php
 incluirTemplate('footer');
 incluirTemplate('menuScroll');
