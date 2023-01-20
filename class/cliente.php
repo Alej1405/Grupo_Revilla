@@ -52,9 +52,25 @@ class Cliente{
         public function guardar()
         {
             //sanitizar los datos 
-            $datos = $this -> sanitizarDatos();
+                $datos = $this -> sanitizarDatos();
 
-            debuguear($datos);
+            //debuguear($datos);
+
+            //query para insertar
+        $query = "INSERT INTO clientes_GR ( ";
+        $query .= join(', ', array_keys($datos));
+        $query .= " ) VALUES ('";
+        $query .= join("', '", array_values($datos));
+        $query .= "') ";
+
+            //debuguear($query);
+
+        //insertar en la base de datos
+
+        $resultado = self::$db -> query($query);
+
+        debuguear($resultado);
+
         }
 
         //unir los datos llaves y valores
