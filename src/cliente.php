@@ -177,14 +177,15 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
                                 <button class="btn btn-primary btn-user btn-block">
                                     Register Account
                                 </button>
-                                <hr>
                             </form>
                             <hr>
                             <div class="text-center">
                                 <a class="small" href="forgot-password.html">Cómo funciona?</a>
+                                <a class="small" href="login.html"> Cuales son las politicas?</a>
                             </div>
+                            <hr>
                             <div class="text-center">
-                                <a class="small" href="login.html">Cuales son las politicas? quiero conocer!</a>
+                                <a class="small" href="forgot-password.html">Salir de aqui</a>
                             </div>
                         </div>
                     </div>
