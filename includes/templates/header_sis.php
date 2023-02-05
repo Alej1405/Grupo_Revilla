@@ -27,6 +27,11 @@
         <script src="https://kit.fontawesome.com/36e9f60aba.js" crossorigin="anonymous"></script>
     <!-- integracion con funciones de javascript -->
         <script src="../../js/funciones.js"></script>
+        <!-- sweet alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="https://kit.fontawesome.com/36e9f60aba.js" crossorigin="anonymous"></script>
+
     <!-- identificacion de la pagina web -->
         <title>Sistema</title>
 </head>

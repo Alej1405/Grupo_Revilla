@@ -14,28 +14,27 @@ $db =conectarDB();
 $errores = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-    // var_dump($_POST);
 
-    $email = mysqli_real_escape_string($db, $_POST['email'] );
-    $contrasena = mysqli_real_escape_string($db, $_POST['contrasena'] );
+    $correo = mysqli_real_escape_string($db, $_POST['correo'] );
+    $pasword = mysqli_real_escape_string($db, $_POST['pasword'] );
 
-    if(!$email) {
+    if(!$correo) {
         $errores[] = "No se que estas haciendo pero ese usuario está mal, jejejé";
     }
-    if(!$contrasena) {
+    if(!$pasword) {
         $errores[] = "La contraseña tambien está mal, asi no se puede...";
     }
 
     if(empty($errores)){
         //revisar si el usuario existe
-        $query = "SELECT * FROM usuario WHERE correo1 = '${email}' ";
+        $query = "SELECT * FROM clientes_GR WHERE correo = '$correo' ";
         $resultado = mysqli_query($db, $query);
         
-        if( $resultado->num_rows){
+        if( $resultado ->num_rows){
             //revisar si el pasword es correcto
             $usuario = mysqli_fetch_assoc($resultado);
-            if ($usuario['cedula'] === $contrasena){
-                
+            
+            if ($usuario['pasword'] === "$pasword"){
                 //El usuario está autentiacado
                 session_start();
 
@@ -49,24 +48,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                     $_SESSION['cliente'] = $usuario['cliente'];
                     $_SESSION['foto'] = $usuario['foto'];
                     $_SESSION['cedula'] = $usuario['cedula'];
+                //direccionar al dashborad de la pagina
+                    header('location: index.php ');
+            }else{
+                $errores[] = "usuario";
             }
+
         }
     }
 }
 
 ?>
 <body>
+
     <div class="login-card">
         <h2>Ingresar</h2>
         <h3>Ingresa tu usuario y clave</h3>
         <form action="" method="post" class="login-form">
+
+                <?php if($errores): ?>
+                    <script>
+                        swal("Ey! algo esta mal", 
+                            "Parece que tu contraseña o usuario esta mal, por favor intena una vez más.",
+                            "error");
+                    </script>
+                <?php endif;?>
+
+            
+
             <input type="text"
             placeholder="Correo"
-            name="email">
+            name="correo">
 
             <input type="password"
             placeholder="Clave"
-            name="">
+            name="pasword">
 
             <a href="cliente.php">
                 Registrar nuevo usuario.
@@ -76,4 +92,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             </button>
         </form>
     </div>
+
 </body>

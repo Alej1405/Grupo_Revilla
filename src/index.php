@@ -1,9 +1,15 @@
 <?php
 require '../includes/app.php';
+//proteger la pagina permitiendo solamente ingresar a usuarios registratados
+$auth = estaAutenticado();
+    if(!$auth){
+        header('location: ../index.php');
+    }
 
 incluirTemplate('header_gcSys');
 incluirTemplate('sidebar');
-incluirTemplate('navBar')
+incluirTemplate('navBar');
+
 ?>
 
             <!-- Begin Page Content -->

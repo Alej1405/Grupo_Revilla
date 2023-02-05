@@ -18,7 +18,7 @@
             <div class="modal-body">Si estas seguro da click en "Salir", si no lo estás puedes Cancelar</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="login.html">Salir</a>
+                <a class="btn btn-primary" href="cerrar-sesion.php">Salir</a>
             </div>
         </div>
     </div>
