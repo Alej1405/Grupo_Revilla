@@ -76,6 +76,7 @@ class Cliente{
         if($resultado){
             // mensaje de exito
             registroGuardado();
+            header('Location: login.php');
         }
 
         }
