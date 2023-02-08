@@ -33,13 +33,13 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                 aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fas fa-fw fa-cog"></i>
-                <span>Registro y Estados</span>
+                <span>Pedidos / Compras</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Acciones:</h6>
-                    <a class="collapse-item" href="buttons.html">Registrar</a>
-                    <a class="collapse-item" href="cards.html">Estado</a>
+                    <a class="collapse-item" href="cargas.php">Registrar</a>
+                    <a class="collapse-item" href="estados.php">Estado General</a>
                 </div>
             </div>
         </li>
