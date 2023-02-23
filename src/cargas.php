@@ -9,8 +9,13 @@ $auth = estaAutenticado();
 incluirTemplate('header_gcSys');
 incluirTemplate('sidebar');
 incluirTemplate('navBar');
+use App\Cargas;
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
+    //INSTANCIAR CLASE
+        $cargas = new Cargas($_POST);
+}
 
 ?>
 
@@ -27,7 +32,7 @@ incluirTemplate('navBar');
         </p>
         <!-- FORMULARIO DE REGISTRO DE CARGAS -->
             <!-- En el registro de la carga el cliente solo llena los datos generales, la actualización con el peso numero de factura con el que se declara y demas detalles los asignara el operador o en este caso la persona que opere el sistema como empleado. El formulario hace referencia a lo que se menciona. -->
-        <form action="" method="post">
+        <form action="" method="POST">
 
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">
@@ -76,10 +81,21 @@ incluirTemplate('navBar');
                         aria-label="Amount (to the nearest dollar)"
                         name="peso">
             </div>
-            <input 
-                type="button" 
-                class="btn btn-primary"
-                value="Guardar">
+            <div hidden>
+                <input type="text" name="unidad">
+                <input type="text" name="largo">
+                <input type="text" name="ancho">
+                <input type="text" name="alto">
+                <input type="text" name="tipo">
+                <input type="text" name="factura">
+                <input type="text" name="valorTotal">
+                <input type="text" name="impuestos">
+                <input type="text" name="envio">
+                <input type="text" name="id_cliente">
+            </div>
+            <button  class="btn btn-primary">
+                Guardar
+            </button>
         </form>
         <!-- FIN DEL FORMULARIO DE REGISTRO DE CARGAS -->
     </div>
