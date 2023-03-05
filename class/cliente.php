@@ -58,8 +58,6 @@ class Cliente{
             //sanitizar los datos 
                 $datos = $this -> sanitizarDatos();
 
-            //debuguear($datos);
-
             //query para insertar
         $query = "INSERT INTO clientes_GR ( ";
         $query .= join(', ', array_keys($datos));
@@ -67,12 +65,11 @@ class Cliente{
         $query .= join("', '", array_values($datos));
         $query .= "') ";
 
-            //debuguear($query);
-
         //insertar en la base de datos
 
         $resultado = self::$db -> query($query);
-
+        
+        //condicion para confirmar
         if($resultado){
             // mensaje de exito
             registroGuardado();

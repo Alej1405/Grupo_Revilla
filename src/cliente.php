@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
     //instanciar clase
     $cliente = new Cliente($_POST);
 
+    
     //validar
     $errores = $cliente -> validar();
 
