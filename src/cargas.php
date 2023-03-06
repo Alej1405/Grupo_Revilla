@@ -15,6 +15,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     //INSTANCIAR CLASE
         $cargas = new Cargas($_POST);
+
+    //validar
+    $errores = $cliente -> validar();
+
+    if(empty($errores)){
+        //llamar la funcion guardar
+        $cargas -> guardar();
+    }
 }
 
 ?>

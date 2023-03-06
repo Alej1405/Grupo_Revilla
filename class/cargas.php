@@ -11,7 +11,7 @@ class Cargas{
         protected static $columnasDB = ['id', 'tracking', 'origen', 'detalle', 'peso', 'unidad', 'largo ancho', 'alto', 'tipo', 'factura', 'valorTotal', 'impuestos', 'envio', 'id_cliente'];
 
     //validacion 
-        protected static $errores =[];
+        protected static $errores = [];
 
     //atribustos de la clase
     public $id;
@@ -63,7 +63,7 @@ class Cargas{
             $datos = $this -> sanitizarDatos();
 
         //query para insertar bases datos
-        $query = "INSERT INTO clientes_GR ( ";
+        $query = "INSERT INTO cargas_GR ( ";
         $query .= join(', ', array_keys($datos));
         $query .= " ) VALUES ('";
         $query .= join("', '", array_values($datos));

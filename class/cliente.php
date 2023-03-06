@@ -70,11 +70,11 @@ class Cliente{
         $resultado = self::$db -> query($query);
         
         //condicion para confirmar
-        if($resultado){
-            // mensaje de exito
-            registroGuardado();
-            header('Location: login.php');
-        }
+            if($resultado){
+                // mensaje de exito
+                registroGuardado();
+                header('Location: login.php');
+            }
 
         }
 
