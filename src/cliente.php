@@ -186,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
                             </div>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="forgot-password.html">Salir de aqui</a>
+                                <a class="small" href="login.php">Salir de aqui</a>
                             </div>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ class Cargas{
         protected static $db;
 
     //iterar las columnas de la base de datos
-        protected static $columnasDB = ['id', 'tracking', 'origen', 'detalle', 'peso', 'unidad', 'largo ancho', 'alto', 'tipo', 'factura', 'valorTotal', 'impuestos', 'envio', 'id_cliente'];
+        protected static $columnasDB = ['id', 'tracking', 'origen', 'detalle', 'peso', 'unidad', 'largo', 'ancho', 'alto', 'tipo', 'factura', 'valorTotal', 'impuestos', 'envio', 'id_cliente'];
 
     //validacion 
         protected static $errores = [];
@@ -100,6 +100,8 @@ class Cargas{
         $datos = $this -> datos();
         $sanitizado = [];
 
+        
+
         foreach ($datos as $key => $value){
             $sanitizado[$key] = self::$db -> escape_string($value);
         }
@@ -114,7 +116,7 @@ class Cargas{
 
     public function validar(){
         if(!$this->tracking){
-            self::$errores[] = "El nú,ero de rastreo o tracking es obligatoio.";
+            self::$errores[] = "El número de rastreo o tracking es obligatoio.";
         }
         if(!$this->detalle){
             self::$errores[] = "Es necesario saber que es lo que compraste. ";

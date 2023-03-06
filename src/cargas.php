@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $cargas = new Cargas($_POST);
 
     //validar
-    $errores = $cliente -> validar();
+    $errores = $cargas -> validar();
 
     if(empty($errores)){
         //llamar la funcion guardar
@@ -90,16 +90,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                         name="peso">
             </div>
             <div hidden>
-                <input type="text" name="unidad">
-                <input type="text" name="largo">
-                <input type="text" name="ancho">
-                <input type="text" name="alto">
-                <input type="text" name="tipo">
-                <input type="text" name="factura">
-                <input type="text" name="valorTotal">
-                <input type="text" name="impuestos">
-                <input type="text" name="envio">
-                <input type="text" name="id_cliente">
+                <input type="text" name="unidad" value="desdeformulario">
+                <input type="text" name="largo" value="desdeformulario">
+                <input type="text" name="ancho" value="desdeformulario">
+                <input type="text" name="alto" value="desdeformulario">
+                <input type="text" name="tipo" value="desdeformulario">
+                <input type="text" name="factura" value="desdeformulario">
+                <input type="text" name="valorTotal" value="desdeformulario">
+                <input type="text" name="impuestos" value="desdeformulario">
+                <input type="text" name="envio" value="desdeformulario">
+                <input type="text" name="id_cliente" value="desdeformulario">
             </div>
             <button  class="btn btn-primary">
                 Guardar
