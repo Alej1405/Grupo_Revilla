@@ -72,7 +72,7 @@
             <div class="back-card">
                 <h2 class="back-light"><span class="callAction">servicios</span></h2>
                 <p class="back-light"> Compras seguras y costo fijo</p>
-                <p class="btn"><a class="back-light" href="src/login.php">INGRESAR</a></p>
+                <p class="btn"><a class="back-light" href="gc-box.gruporevilla.world/index.php">INGRESAR</a></p>
             </div>
         </div>
         <div class="card-main">
