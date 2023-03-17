@@ -24,22 +24,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>Grupo Revilla</title>
+    <title>Gc-box Courier</title>
 </head>
 
 <body class="principal">
-    <div class="background"></div>
     <nav class="navbar">
-      <img class="navbar-logo" src="./assets/logo.png" />
-      <input type="text" placeholder="Search" class="navbar-search" />
+        <a href="http://" class="navbar-logo"><i class="fa-solid fa-house"></i></a>
+        <a href="http://" class="navbar-logo"><i class="fa-solid fa-people-group"></i>Empresas</a>
+        <a href="http://" class="navbar-logo"><i class="fa-sharp fa-solid fa-address-book"></i></a>
     </nav>
     <button class="navbar-burger" onclick="toggleMenu()"></button>
     <nav class="menu">
-      <a href="#" style="animation-delay: 0.1s">Home</a>
-      <a href="#" style="animation-delay: 0.2s">About</a>
-      <a href="#" style="animation-delay: 0.3s">Services</a>
-      <a href="#" style="animation-delay: 0.4s">Products</a>
-      <a href="#" style="animation-delay: 0.5s">Contact</a>
+        <a href="#" style="animation-delay: 0.1s">Servicios</a>
+        <a href="#" style="animation-delay: 0.2s"></a>
+        <a href="#" style="animation-delay: 0.3s">Services</a>
+        <a href="#" style="animation-delay: 0.4s">Products</a>
+        <a href="#" style="animation-delay: 0.5s">Contact</a>
     </nav>
 
         <footer class="footer">
