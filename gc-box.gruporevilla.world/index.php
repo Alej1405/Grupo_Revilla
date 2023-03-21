@@ -28,12 +28,13 @@
 </head>
 
 <body class="principal">
+<!-- navbar de web site -->
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
     <nav class="navbar">
         <a href="http://" class="navbar-logo"><i class="fa-solid fa-house"></i></a>
         <a href="http://" class="navbar-logo"><i class="fa-solid fa-people-group"></i>Empresas</a>
         <a href="http://" class="navbar-logo"><i class="fa-sharp fa-solid fa-address-book"></i></a>
     </nav>
-    <button class="navbar-burger" onclick="toggleMenu()"></button>
     <nav class="menu">
         <a href="#" style="animation-delay: 0.1s">Servicios</a>
         <a href="#" style="animation-delay: 0.2s"></a>
@@ -41,16 +42,31 @@
         <a href="#" style="animation-delay: 0.4s">Products</a>
         <a href="#" style="animation-delay: 0.5s">Contact</a>
     </nav>
+<!-- inicio del cuerpo de la pagina -->
+<section class="body">
+    <!-- tarjeta de informacion -->
+    <div class="card">
+        <img src="img/logo_gcbox.png" />
+        <div>
+            <h2>Invest in Valby's sparkling new construction</h2>
+            <h3>Type: Residential rental</h3>
+            <p>
+                Soon you can invest in Sid Harman's new attractive property, set in
+                the heart of Athens.
+            </p>
+            <button>Show the property project</button>
+        </div>
+    </div>
+</section>
+<!-- inicio del footer -->
+    <footer class="footer">
 
-        <footer class="footer">
-
-        </footer>
-
+    </footer>
+<!-- script de animacion del boton del menu. -->
     <script type="text/javascript">
-      const toggleMenu = () => {
-        document.body.classList.toggle("open");
-      };
+        const toggleMenu = () => {
+            document.body.classList.toggle("open");
+        };
     </script>
 </body>
-
 </html>
