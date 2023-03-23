@@ -45,7 +45,7 @@ button {
     cursor: pointer;
   }
   
-  .navbar,
+  .navbar1,
   .navbar-burger,
   .menu,
   .background {
@@ -57,7 +57,7 @@ button {
   }
   
   /* fondo para la barra de menu */
-  .navbar {
+  .navbar1 {
     z-index: 1;
     top: 0;
     left: 0;
@@ -76,9 +76,11 @@ button {
     font-size: 28px;
   }
   
-  .navbar-logo {
+  .navbar-logo1 {
     height: 20px;
     padding-left: 25px;
+    text-decoration: none;
+    color: #f9f9f9;
   }
   
   .navbar-burger {
@@ -162,7 +164,7 @@ button {
 /*fin de estilos de navbar*/
 
 /*inicio de estilos de tarjetas de informacion*/
-.body {
+.body1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,7 +172,7 @@ button {
   font-family: "Euclid Circular A", "Poppins";
 }
 
-.card {
+.card1{
   display: flex;
   align-items: center;
   width: 75vw;
@@ -178,9 +180,10 @@ button {
   padding: 50px 30px 50px 20px;
   background: #ffffff;
   border-radius: 24px;
+  margin-left: 25px;
 }
 
-.card img {
+.card1 img {
   max-width: 280px;
   width: 28vw;
   height: 300px;
@@ -191,25 +194,25 @@ button {
   box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
 }
 
-.card h2 {
+.card1 h2 {
   font-size: 22px;
   margin-right: 30px;
 }
 
-.card h3 {
+.card1 h3 {
   font-size: 16px;
   font-weight: 400;
   color: rgb(0 0 0 / 90%);
 }
 
-.card p {
+.card1 p {
   font-size: 14px;
   font-weight: 400;
   color: rgb(0 0 0 / 70%);
   margin-bottom: 24px;
 }
 
-.card button {
+.card1 button {
   border: 0;
   background: linear-gradient(90deg, #5448de, #5448de);
   color: #f8f8f8;
@@ -219,8 +222,18 @@ button {
   border-radius: 40px;
 }
 
+.card2{
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  max-width: 650px;
+  padding: 50px 30px 50px 20px;
+  border-radius: 24px;
+  margin-left: 10%;
+}
+
 @media (width <= 740px) {
-  .card {
+  .card1 {
     margin: 0 40px;
     padding-left: 50px;
     padding-right: 50px;
@@ -229,12 +242,12 @@ button {
     flex-direction: column;
   }
 
-  .card h2 {
+  .card1 h2 {
     margin-right: 0;
     font-size: 26px;
   }
 
-  .card img {
+  .card1 img {
     margin: -100px 0 30px 0;
     width: 100%;
     max-width: 1000px;

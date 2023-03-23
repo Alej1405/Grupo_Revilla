@@ -21,8 +21,7 @@
     <script src="https://kit.fontawesome.com/36e9f60aba.js" crossorigin="anonymous"></script>
     <!-- integracion de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Gc-box Courier</title>
 </head>
@@ -30,10 +29,10 @@
 <body class="principal">
 <!-- navbar de web site -->
     <button class="navbar-burger" onclick="toggleMenu()"></button>
-    <nav class="navbar">
-        <a href="http://" class="navbar-logo"><i class="fa-solid fa-house"></i></a>
-        <a href="http://" class="navbar-logo"><i class="fa-solid fa-people-group"></i>Empresas</a>
-        <a href="http://" class="navbar-logo"><i class="fa-sharp fa-solid fa-address-book"></i></a>
+    <nav class="navbar1">
+        <a href="http://" class="navbar-logo1"><i class="fa-solid fa-house"></i></a>
+        <a href="http://" class="navbar-logo1"><i class="fa-solid fa-people-group"></i> Empresas</a>
+        <a href="http://" class="navbar-logo1"><i class="fa-sharp fa-solid fa-address-book"></i></a>
     </nav>
     <nav class="menu">
         <a href="#" style="animation-delay: 0.1s">Servicios</a>
@@ -43,10 +42,10 @@
         <a href="#" style="animation-delay: 0.5s">Contact</a>
     </nav>
 <!-- inicio del cuerpo de la pagina -->
-<section class="body">
+<section class="body1">
     <!-- tarjeta de informacion -->
-    <div class="card">
-        <img src="img/logo_gcbox.png" />
+    <div class="card1">
+        <img src="img/logo_gcbox2.png"  />
         <div>
             <h2>Invest in Valby's sparkling new construction</h2>
             <h3>Type: Residential rental</h3>
@@ -56,6 +55,11 @@
             </p>
             <button>Show the property project</button>
         </div>
+    </div>
+    <div class="card2">
+        <a href="#" class="btn btn-primary btn-lg disabled m-4" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+        <a href="#" class="btn btn-primary btn-lg disabled m-4" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+        <a href="#" class="btn btn-primary btn-lg disabled m-4" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
     </div>
 </section>
 <!-- inicio del footer -->
