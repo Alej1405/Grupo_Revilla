@@ -45,21 +45,25 @@
 <section class="body1">
     <!-- tarjeta de informacion -->
     <div class="card1">
-        <img src="img/logo_gcbox2.png"  />
+        <img src="img/img_gcbox2.png"  />
         <div>
-            <h2>Invest in Valby's sparkling new construction</h2>
-            <h3>Type: Residential rental</h3>
+            <h2 class="titulo1">Hey!!! bienvenido</h2>
+            <br>
+            <h3>Con la garantia de Grupo Revilla</h3>
+            <br>
             <p>
-                Soon you can invest in Sid Harman's new attractive property, set in
-                the heart of Athens.
+                La forma mas fácil de importar, directamente de las mejores tiendas del Mundo. 
             </p>
-            <button>Show the property project</button>
+            <br>
+            <button>
+                Conoce nuestras ofertas!!!
+            </button>
         </div>
     </div>
     <div class="card2">
-        <a href="#" class="btn btn-primary btn-lg disabled m-4" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-        <a href="#" class="btn btn-primary btn-lg disabled m-4" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-        <a href="#" class="btn btn-primary btn-lg disabled m-4" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+        <a href="#" class="btn btn-primary btn-lg m-4" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+        <a href="#" class="btn btn-primary btn-lg m-4" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+        <a href="#" class="btn btn-primary btn-lg m-4" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
     </div>
 </section>
 <!-- inicio del footer -->
