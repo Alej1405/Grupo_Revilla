@@ -64,7 +64,7 @@ class Cliente{
         $query .= " ) VALUES ('";
         $query .= join("', '", array_values($datos));
         $query .= "') ";
-
+            //debuguear($query);
         //insertar en la base de datos
 
         $resultado = self::$db -> query($query);
