@@ -39,7 +39,7 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Acciones:</h6>
                     <a class="collapse-item" href="cargas.php">Registrar</a>
-                    <a class="collapse-item" href="estados.php">Estado General</a>
+                    <a class="collapse-item" href="consulta_cargas.php">Estado General</a>
                 </div>
             </div>
         </li>

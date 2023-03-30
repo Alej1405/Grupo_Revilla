@@ -53,7 +53,7 @@ class Cargas{
         $this -> valorTotal = $args ['valorTotal'] ?? 'actualizar';
         $this -> impuestos = $args ['impuestos'] ?? 'actualizar';
         $this -> envio = $args ['envio'] ?? 'actualizar';
-        $this -> id_cliente = $args ['id_cliente'];
+        $this -> id_cliente = $args ['id_cliente'] ?? 'usuario';
     }
     
     //funcion guardar
@@ -123,4 +123,42 @@ class Cargas{
         return self::$errores;
     }
 
+    //consultar todas las cargas del usuraio consulta general
+    
+    public static function all($idUsuario){
+        $query = "SELECT * FROM cargas_Gr WHERE id_cliente = {$idUsuario}";
+
+        $resultado = self::consultarSQL($query);
+        return $resultado;
+
+    }
+        public static function consultarSQL($query){
+            //consultar la base de datos
+                $resultado = self::$db -> query($query);
+            
+            //iterar los resultados
+                $array = [];
+                while($cargas = $resultado ->fetch_assoc()){
+                    $array[] = self::crearObjeto($cargas);
+                }
+
+            //liberar la memoria
+            $resultado -> free();
+
+            //retornar los resultados
+            return $array;
+        }
+
+        protected static function crearObjeto($cargas){
+            $objeto = new self;
+
+            //iterar y crear los objetos con la informacion del usuario
+            foreach($cargas as $key => $value){
+
+                if(property_exists($objeto, $key)){
+                    $objeto -> $key = $value;
+                }
+            }
+            return $objeto;
+        }
 }
