@@ -11,6 +11,9 @@ incluirTemplate('sidebar');
 incluirTemplate('navBar');
 use App\Cargas;
 
+//Asigrnar el id del usuario para poder guardar
+$idUsuario = $_SESSION['id'];
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     //INSTANCIAR CLASE
@@ -41,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         <!-- FORMULARIO DE REGISTRO DE CARGAS -->
             <!-- En el registro de la carga el cliente solo llena los datos generales, la actualización con el peso numero de factura con el que se declara y demas detalles los asignara el operador o en este caso la persona que opere el sistema como empleado. El formulario hace referencia a lo que se menciona. -->
         <form action="" method="POST">
-
+            <?php echo $idUsuario; ?>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">
                     Tracking
@@ -90,16 +93,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                         name="peso">
             </div>
             <div hidden>
-                <input type="text" name="unidad" value="desdeformulario">
-                <input type="text" name="largo" value="desdeformulario">
-                <input type="text" name="ancho" value="desdeformulario">
-                <input type="text" name="alto" value="desdeformulario">
-                <input type="text" name="tipo" value="desdeformulario">
-                <input type="text" name="factura" value="desdeformulario">
-                <input type="text" name="valorTotal" value="desdeformulario">
-                <input type="text" name="impuestos" value="desdeformulario">
-                <input type="text" name="envio" value="desdeformulario">
-                <input type="text" name="id_cliente" value="desdeformulario">
+                <input 
+                    type="text" 
+                    name="unidad" 
+                    value="desdeformulario">
+                <input 
+                    type="text" 
+                    name="largo" 
+                    value="desdeformulario">
+                <input 
+                    type="text" 
+                    name="ancho" 
+                    value="desdeformulario">
+                <input 
+                    type="text" 
+                    name="alto" 
+                    value="desdeformulario">
+                <input 
+                    type="text" 
+                    name="tipo" 
+                    value="desdeformulario">
+                <input 
+                    type="text" 
+                    name="factura" 
+                    value="desdeformulario">
+                <input 
+                    type="text" 
+                    name="valorTotal"
+                    value="desdeformulario">
+                <input 
+                    type="text" 
+                    name="impuestos" 
+                    value="desdeformulario">
+                <input 
+                    type="text" 
+                    name="envio" 
+                    value="desdeformulario">
+                <input 
+                    type="text" 
+                    name="id_cliente" 
+                    value="<?php echo $idUsuario; ?>">
             </div>
             <button  class="btn btn-primary">
                 Guardar

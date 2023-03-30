@@ -13,3 +13,8 @@ use App\Cliente;
 //conectar a la base de datos
 $db = conectarDB();
 Cliente::setDB($db);
+
+use App\Cargas;
+//conectar a la base de datos
+$db = conectarDB();
+Cargas::setDB($db);

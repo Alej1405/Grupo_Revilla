@@ -53,7 +53,7 @@ class Cargas{
         $this -> valorTotal = $args ['valorTotal'] ?? 'actualizar';
         $this -> impuestos = $args ['impuestos'] ?? 'actualizar';
         $this -> envio = $args ['envio'] ?? 'actualizar';
-        $this -> id_cliente = $args ['id_cliente'] ?? 'actualizar';
+        $this -> id_cliente = $args ['id_cliente'];
     }
     
     //funcion guardar
@@ -63,7 +63,7 @@ class Cargas{
             $datos = $this -> sanitizarDatos();
 
         //query para insertar bases datos
-        $query = "INSERT INTO cargas_GR ( ";
+        $query = "INSERT INTO cargas_Gr ( ";
         $query .= join(', ', array_keys($datos));
         $query .= " ) VALUES ('";
         $query .= join("', '", array_values($datos));
@@ -83,30 +83,29 @@ class Cargas{
     
     }
 
-    //unir los datos llaves y valores
-    public function datos()
-    {
-        $datos = [];
-        foreach (self::$columnasDB as $columna){
-            if($columna === 'id') continue;
-            $datos[$columna] = $this -> $columna;
-        }
-        return $datos;
-    }
-
     //sanitizar datos del formulario
     public function sanitizarDatos(){
         //validar los datos
         $datos = $this -> datos();
         $sanitizado = [];
 
-        
-
         foreach ($datos as $key => $value){
             $sanitizado[$key] = self::$db -> escape_string($value);
         }
+        
         return $sanitizado;
     }
+
+        //unir los datos llaves y valores
+        public function datos()
+        {
+            $datos = [];
+            foreach (self::$columnasDB as $columna){
+                if($columna === 'id') continue;
+                $datos[$columna] = $this -> $columna;
+            }
+            return $datos;
+        }
 
     //validar los datos
     public static function getErrores()

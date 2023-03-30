@@ -16,6 +16,8 @@ $clientes = Cliente::all();
 
 ?>
 
+
+
 <?php
     incluirTemplate('footer');
     incluirTemplate('menuScroll');
