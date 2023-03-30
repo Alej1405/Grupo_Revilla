@@ -129,4 +129,48 @@ class Cliente{
         }
         return self::$errores;
     }
+
+    
+    
+    //consultas generales de la base de datos sin filtros COBSULTA DE ADMINISTRADOR
+
+    // Lista todos los clientes
+    public static function all(){
+        $query = "SELECT * FROM clientes_GR";
+
+        $resultado = self::consultarSQL($query);
+        return $resultado;
+
+    }
+
+        public static function consultarSQL($query){
+            //consultar la base de datos
+            $resultado = self::$db -> query($query);
+
+            // iterar los resultados While o foreach
+            $array = [];
+            while($cliente = $resultado->fetch_assoc()){
+                $array[] = self::crearObjeto($cliente);
+            }
+            //liberar memoria y retornar los resultados
+            $resultado -> free();
+
+            //retornar los resultados
+
+            return $array;
+        }
+
+            protected static function crearObjeto($cliente){
+                $objeto = new self;
+
+                //iterar y crear los objetos con los resultados de la base de datos
+                foreach($cliente as $key => $value ) {
+
+                    if(property_exists($objeto, $key)){
+                        $objeto -> $key = $value;
+                    }
+                }
+                return $objeto;
+            }
+
 }
