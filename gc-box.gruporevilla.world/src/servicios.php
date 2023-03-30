@@ -15,8 +15,9 @@
     <meta property="og:description" content="El mejor courier rapido y efectivo, aprendes a importar sin intermediarios.">
     <meta property="og:url" content="https://gc-box.gruporevilla.world/">
     <meta property="og:site_name" content="Gc-box Courier">
-    <link rel="shortcut icon" href="img/logo_gcbox.png">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="../img/logo_gcbox.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles2.css">
     <!-- api fontawsome -->
     <script src="https://kit.fontawesome.com/36e9f60aba.js" crossorigin="anonymous"></script>
     <!-- integracion de bootstrap -->
@@ -26,7 +27,7 @@
     <title>Gc-box Courier</title>
 </head>
 
-<body class="principal">
+<body>
 <!-- navbar de web site -->
     <button class="navbar-burger" onclick="toggleMenu()"></button>
     <nav class="navbar1">
@@ -54,52 +55,53 @@
         <a href="#" style="animation-delay: 0.4s">Products</a>
         <a href="#" style="animation-delay: 0.5s">Contact</a>
     </nav>
-<!-- inicio del cuerpo de la pagina -->
-<section class="body1">
-    <!-- tarjeta de informacion -->
-    <div class="card1">
-        <img src="img/img_gcbox2.png"  />
-        <div>
-            <h2 class="titulo1">Hey!!! bienvenido</h2>
-            <br>
-            <h3>Con la garantia de Grupo Revilla</h3>
-            <br>
-            <p>
-                La forma mas fácil de importar, directamente de las mejores tiendas del Mundo. 
-            </p>
-            <br>
-            <button>
-                Conoce nuestras ofertas!!!
-            </button>
-        </div>
-    </div>
-    <div class="card2">
-        <a 
-            href="../src/login.php" 
-            class="btn btn-primary btn-lg m-4" 
-            tabindex="-1" role="button" 
-            aria-disabled="true">
-                Ingresar a mi casilla
-        </a>
-        <a 
-            href="src/servicios.php" 
-            class="btn btn-primary btn-lg m-4" 
-            tabindex="-1" 
-            role="button" 
-            aria-disabled="true">
-                Servicios 
-        </a>
-        <a 
-            href="src/cotizador.php" 
-            class="btn btn-primary btn-lg m-4" 
-            tabindex="-1" 
-            role="button" 
-            aria-disabled="true">
-                Cortizador
-        </a>
-    </div>
-</section>
-<!-- inicio del footer -->
+
+    <section class="image"></section>
+    <section class="text">
+        <h2>Nike Air Max 90</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+            facilis voluptatem aliquid natus iure? Rerum porro iste neque quod
+            facilis cupiditate possimus voluptatem corrupti, quae beatae asperiores
+            omnis illo magni?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+            facilis voluptatem aliquid natus iure? Rerum porro iste neque quod
+            facilis cupiditate possimus voluptatem corrupti, quae beatae asperiores
+            omnis illo magni?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+            facilis voluptatem aliquid natus iure? Rerum porro iste neque quod
+            facilis cupiditate possimus voluptatem corrupti, quae beatae asperiores
+            omnis illo magni?
+        </p>
+    </section>
+    <section class="image"></section>
+    <section class="text">
+        <h2>Why Are They So Good?</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+            facilis voluptatem aliquid natus iure? Rerum porro iste neque quod
+            facilis cupiditate possimus voluptatem corrupti, quae beatae asperiores
+            omnis illo magni?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+            facilis voluptatem aliquid natus iure? Rerum porro iste neque quod
+            facilis cupiditate possimus voluptatem corrupti, quae beatae asperiores
+            omnis illo magni?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+            facilis voluptatem aliquid natus iure? Rerum porro iste neque quod
+            facilis cupiditate possimus voluptatem corrupti, quae beatae asperiores
+            omnis illo magni?
+        </p>
+    </section>
+
+    <!-- inicio del footer -->
     <footer class="footer">
 
     </footer>

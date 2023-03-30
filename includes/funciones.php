@@ -22,6 +22,11 @@ function debuguear ($variable) {
     exit;
 }
 
+function s($html) : string{
+    $s = htmlspecialchars($html);
+    return $s;
+}
+
 function registroGuardado(){
     echo "<script>
         Swal.fire({
