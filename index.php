@@ -36,16 +36,16 @@
             </label>
             <ul class="list">
                 <li>
-                    <a href="#">Quienes Somos</a>
+                    <a href="src/info/nosotros.php">Quienes Somos</a>
                 </li>
                 <li>
-                    <a href="#">Contactos</a>
+                    <a href="src/info/contactos.php">Contactos</a>
                 </li>
                 <li>
-                    <a href="#">Trabaja con nosotros</a>
+                    <a href="src/info/trabaja_nosotros.php">Trabaja con nosotros</a>
                 </li>
                 <li>
-                    <a href="src/login.php">Ingresar</a>
+                    <a href="#">Masha 2.0</a>
                 </li>
             </ul>
         </div>

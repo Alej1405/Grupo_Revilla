@@ -32,12 +32,12 @@
     <button class="navbar-burger" onclick="toggleMenu()"></button>
     <nav class="navbar1">
         <a 
-            href="" 
+            href="../index.php" 
             class="navbar-logo1">
             <i class="fa-solid fa-house"></i>
         </a>
         <a 
-            href="/index.php" 
+            href="../../index.php" 
             class="navbar-logo1">
             <i class="fa-solid fa-people-group"></i> 
             Empresas
