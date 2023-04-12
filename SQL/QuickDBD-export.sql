@@ -14,7 +14,8 @@ CREATE TABLE `clientes_GR` (
     `celular` int(10)  NOT NULL ,
     `telefono` int(10)  NOT NULL ,
     `correo` varchar(250)  NOT NULL ,
-    `referecia` varchar(250)  NOT NULL ,
+    `pasword` varchar(150)  NOT NULL ,
+    `promocion` varchar(250)  NOT NULL ,
     PRIMARY KEY (
         `id`
     )
@@ -59,8 +60,8 @@ CREATE TABLE `instruccion_cargas` (
     `fechaEmbarque` date  NOT NULL ,
     `fraccionamiento` varchar(50)  NOT NULL ,
     `tipoEmbarque` varchar(150)  NOT NULL ,
-    `paquetesGenerados` var  NOT NULL ,
-    `fechaArribo` date  NOT NULL ,
+    `paquetesGenerados` varchar(150) NOT NULL ,
+    `fechaArribo` date ,
     `estado` varchar(120)  NOT NULL ,
     `consginatario` varchar(350)  NOT NULL ,
     `cedula` varchar(10)  NOT NULL ,
