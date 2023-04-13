@@ -11,6 +11,8 @@ incluirTemplate('sidebar');
 incluirTemplate('navBar');
 use App\Cargas;
 
+$errores = Cargas::getErrores();
+
 //Asigrnar el id del usuario para poder guardar
 $idUsuario = $_SESSION['id'];
 
@@ -24,7 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     if(empty($errores)){
         //llamar la funcion guardar
-        $cargas -> guardar();
+        $resultado = $cargas -> guardar();
+
+        if ($resultado){
+            echo'<script>alert(hola)</script>';
+        }
 
     }
 }

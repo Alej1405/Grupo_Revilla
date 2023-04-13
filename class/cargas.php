@@ -72,14 +72,7 @@ class Cargas{
         //insertar en la base de datos
         $resultado = self::$db -> query($query);
 
-        //condicion para confirmar 
-            if($resultado){
-                //mensaje de extio
-                echo    "<script>
-                            alert('se guardo'); 
-                        </script>";
-            }
-
+        return $resultado;
     
     }
 
