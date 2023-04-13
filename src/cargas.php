@@ -45,6 +45,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         <!-- FORMULARIO DE REGISTRO DE CARGAS -->
             <!-- En el registro de la carga el cliente solo llena los datos generales, la actualización con el peso numero de factura con el que se declara y demas detalles los asignara el operador o en este caso la persona que opere el sistema como empleado. El formulario hace referencia a lo que se menciona. -->
         <form action="" method="POST">
+        <?php foreach($errores as $error): ?>
+            <div class="alert alert-danger" role="alert">
+                <?php echo $error; ?>
+            </div> 
+        <?php endforeach;?>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">
                     Tracking
@@ -100,15 +105,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                 <input 
                     type="text" 
                     name="largo" 
-                    value="desdeformulario">
+                    value="1">
                 <input 
                     type="text" 
                     name="ancho" 
-                    value="desdeformulario">
+                    value="1">
                 <input 
                     type="text" 
                     name="alto" 
-                    value="desdeformulario">
+                    value="1">
                 <input 
                     type="text" 
                     name="tipo" 
@@ -120,15 +125,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                 <input 
                     type="text" 
                     name="valorTotal"
-                    value="desdeformulario">
+                    value="1">
                 <input 
                     type="text" 
                     name="impuestos" 
-                    value="desdeformulario">
+                    value="1">
                 <input 
                     type="text" 
                     name="envio" 
-                    value="desdeformulario">
+                    value="1">
                 <input 
                     type="text" 
                     name="id_cliente" 

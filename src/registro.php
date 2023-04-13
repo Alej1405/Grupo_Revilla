@@ -24,6 +24,10 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST') {
                 type="number"
                 placeholder="Número de Cédula"
                 name="cedula"
+                maxlength="13"
+                size="13"
+                minlength="10"
+                min="10"
             />
             <input 
                 type="text"

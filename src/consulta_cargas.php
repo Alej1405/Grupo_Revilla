@@ -11,7 +11,7 @@ use App\Cargas;
 
 $idUsuario = $_SESSION['id'];
 //llamar al metodos de consulta
-$cargas = Cargas::all($idUsuario);
+$cargas = Cargas::find($idUsuario);
 
 
 

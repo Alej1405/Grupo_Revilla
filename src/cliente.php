@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
                                             placeholder="Nombre o nombres"
                                             name="nombre"
                                             maxlength="150"
-                                            require>
+                                            required>
                                     </div>
                                     <div class="col-sm-6">
                                         <input 
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
                                             placeholder="Apellido o apellidos"
                                             name="apellido"
                                             maxlength="150"
-                                            require>
+                                            required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
                                             placeholder="Número de cédula"
                                             name="cedula"
                                             maxlength="10"
-                                            require>
+                                            required>
                                     </div>
                                     <div class="col-sm-6">
                                         <input 
@@ -132,7 +132,7 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
                                         placeholder="Déjanos tu correo.."
                                         name="correo"
                                         maxlength="250"
-                                        require>
+                                        required>
                                 </div>
                                 
                                 <div class="form-group row">
@@ -144,7 +144,7 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
                                             placeholder="Nos dejas tu numero de celular...?"
                                             name="celular"
                                             maxlength="10"
-                                            require>
+                                            required>
                                     </div>
                                     <div class="col-sm-6">
                                         <input 
@@ -173,7 +173,7 @@ if ($_SERVER['REQUEST_METHOD']=== 'POST' ){
                                         placeholder="Crea una contraseña segura. Solo numeros"
                                         name="pasword"
                                         maxlength="8"
-                                        require>
+                                        required>
                                 </div>
                                 <button class="btn btn-primary btn-user btn-block">
                                     Register Account

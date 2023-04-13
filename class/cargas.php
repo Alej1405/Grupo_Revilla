@@ -45,9 +45,9 @@ class Cargas{
         $this -> detalle = $args ['detalle'] ?? '';
         $this -> peso = $args ['peso'] ?? 'actualizar';
         $this -> unidad = $args ['unidad'] ?? 'actualizar';
-        $this -> largo = $args ['largo'] ?? 'actualizar';
-        $this -> ancho = $args ['ancho'] ?? 'actualizar';
-        $this -> alto = $args ['alto'] ?? 'actualizar';
+        $this -> largo = $args ['largo'] ?? '1';
+        $this -> ancho = $args ['ancho'] ?? '1';
+        $this -> alto = $args ['alto'] ?? '1';
         $this -> tipo = $args ['tipo'] ?? 'actualizar';
         $this -> factura = $args ['factura'] ?? 'actualizar';
         $this -> valorTotal = $args ['valorTotal'] ?? 'actualizar';
@@ -125,7 +125,7 @@ class Cargas{
 
     //consultar todas las cargas del usuraio consulta general
     
-    public static function all($idUsuario){
+    public static function find($idUsuario){
         $query = "SELECT * FROM cargas_Gr WHERE id_cliente = {$idUsuario}";
 
         $resultado = self::consultarSQL($query);

@@ -2,12 +2,11 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
             <div class="sidebar-brand-icon">
                 <!-- <i class="fas fa-laugh-wink"></i> -->
                 <img class="logo1" src="../../img/logo_gcbox.png" alt="Logogc box Courier">
             </div>
-            <!-- <div class="sidebar-brand-text mx-3">Hola!! <sup>Pablo</sup></div> -->
         </a>
 
         <!-- Divider -->
@@ -15,7 +14,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="index.php">
                 <i class="fas fa-regular fa-box-open"></i>
                 <span>Sistema Box</span></a>
         </li>
