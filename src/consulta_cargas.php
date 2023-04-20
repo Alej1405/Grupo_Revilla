@@ -48,11 +48,13 @@ $cargas = Cargas::find($idUsuario);
                         <td>
                             <?php echo $carga -> valorTotal;?>
                         </td>
+                        <td>
+                        <a href="actualizar_cargas.php?id=<?php echo $carga ->id; ?>" class="card-link">actualizar</a>
+                        </td>
                     </tr>
                     <?php endforeach ?>
                 </tbody>
             </table>
-        <a href="#" class="card-link">Card link</a>
         <a href="#" class="card-link">Another link</a>
     </div>
 </div>

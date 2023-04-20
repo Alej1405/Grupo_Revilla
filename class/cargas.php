@@ -125,6 +125,15 @@ class Cargas{
         return $resultado;
 
     }
+
+    //consultar los registros para actualizar
+    public static function findCarga($id){
+        $query = "SELECT * FROM cargas_Gr WHERE id = {$id}";
+
+        $resultado = self::consultarSQL($query);
+        return array_shift($resultado);
+    }
+
         public static function consultarSQL($query){
             //consultar la base de datos
                 $resultado = self::$db -> query($query);

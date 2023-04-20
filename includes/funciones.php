@@ -12,6 +12,7 @@ function estaAutenticado() : bool  {
     if ($auth) {
         return true;
     }
+        header('location: ../index.php');
         return false;
 }
 
